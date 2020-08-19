@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondito"
+    tools:context=".AgregarUsuarios"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/inUsuario"
+        android:layout_width="317dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/inNombre"
+        app:layout_constraintEnd_toEndOf="@+id/inNombre"
+        app:layout_constraintStart_toStartOf="@+id/inNombre"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/inNombre"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/inApellido"
+        app:layout_constraintEnd_toEndOf="@+id/inApellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inUsuario" />
+
+    <EditText
+        android:id="@+id/inApellido"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/inPassword"
+        app:layout_constraintEnd_toEndOf="@+id/inPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inNombre" />
+
+    <EditText
+        android:id="@+id/inPassword"
+        android:layout_width="323dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Contraseña"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inApellido" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="38dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="casual"
+        android:text="Tono"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/inPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inPassword" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/inRelacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/inRelacion"
+        android:layout_width="341dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Relacion"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAgregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="casual"
+        android:text="Agregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inRelacion" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="casual"
+        android:text="AGREGAR USUARIO"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/inUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+</android.support.constraint.ConstraintLayout>
